@@ -1,0 +1,40 @@
+{
+  "name": "ejs-loader",
+  "version": "1.0.0",
+  "description": "EJS loader for webpack",
+  "main": "dist/ejs-loader.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "ejs": "github:malomalo/ejs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "mocha": "^5.0.0",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "babel --no-babelrc lib/loader.js -o dist/ejs-loader.js --presets @babel/env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malomalo/ejs-loader.git"
+  },
+  "keywords": [
+    "ejs",
+    "template",
+    "webpack",
+    "loader"
+  ],
+  "author": "Jon Bracy <jonbracy@gmail.com> (https://malomalo.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malomalo/ejs-loader/issues"
+  },
+  "homepage": "https://github.com/malomalo/ejs-loader#readme"
+}
